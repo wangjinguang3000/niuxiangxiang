@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="牛香香·草原人宠互动季 报名参赛。早鸟价¥1,780（限前20组），参赛¥1,980/组，观摩¥1,280/人。">
+<meta name="theme-color" content="#8B5E3C">
+<title>报名参赛 | 牛香香 · 草原人宠互动季</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.reg-hero { background:linear-gradient(135deg,var(--green-dark),var(--brown)); color:var(--white); padding:calc(61px + 3rem)1.25rem 3rem; text-align:center; position:relative; overflow:hidden; }
+.reg-hero::before { content:''; position:absolute; inset:0; background:url('assets/images/prairie_sunset_wide.jpg') center/cover; opacity:.15; }
+.reg-hero .container { position:relative; z-index:1; }
+.countdown-grid { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin:1.5rem 0; }
+.countdown-item { background:rgba(255,255,255,.15); backdrop-filter:blur(8px); border-radius:var(--radius-md); padding:.75rem 1rem; text-align:center; min-width:70px; }
+.countdown-item .num { font-family:var(--font-title); font-size:1.6rem; font-weight:800; line-height:1; }
+.countdown-item .lbl { font-size:.7rem; opacity:.7; margin-top:.25rem; }
+.reg-form { background:var(--white); border-radius:var(--radius-xl); padding:2rem; box-shadow:var(--shadow-lg); max-width:700px; margin:0 auto; }
+@media(min-width:768px){ .reg-form { padding:2.5rem; } }
+.pay-guide { background:var(--cream); border-radius:var(--radius-lg); padding:1.25rem; margin-top:1rem; text-align:center; }
+.why-card { background:var(--white); border-radius:var(--radius-lg); padding:1.25rem; text-align:center; box-shadow:var(--shadow-sm); }
+.why-card .icon { font-size:2rem; margin-bottom:.5rem; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">🐂 牛香香</a>
+    <button id="navToggle" class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <div id="navLinks" class="nav-links">
+      <a href="index.html">首页</a><a href="event.html">赛事介绍</a><a href="register.html" class="active">报名参赛</a><a href="diary.html">创业日记</a><a href="videos.html">视频中心</a><a href="products.html">产品</a><a href="cooperation.html">合作</a><a href="about.html">关于我们</a><a href="register.html" class="nav-cta">立即报名</a>
+    </div>
+  </div>
+</nav>
+
+<div class="reg-hero">
+  <div class="container">
+    <h1>🔥 报名参赛</h1>
+    <p style="opacity:.9;font-size:1.1rem;">早鸟价 ¥1,780 · 仅限前20组</p>
+    <div id="countdown" data-target="2026-07-01T00:00:00" style="display:flex;gap:.5rem;justify-content:center;align-items:center;font-size:1.1rem;font-weight:700;margin:1rem 0;"></div>
+    <p style="font-size:.8rem;opacity:.7;">首季限额60-100组，报满即止</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <!-- 三大理由 -->
+    <div class="feature-grid cols-3" style="margin-bottom:2.5rem;">
+      <div class="why-card reveal"><div class="icon">💰</div><h3 style="font-size:1rem;">比寄养划算</h3><p class="text-sm" style="color:var(--gray-500);">狗寄养3天≈¥450，还不开心。带狗来草原3天全包¥1,780起——一起开心！</p></div>
+      <div class="why-card reveal"><div class="icon">🏕️</div><h3 style="font-size:1rem;">真草原体验</h3><p class="text-sm" style="color:var(--gray-500);">不是城市草坪。锡林郭勒真正的大草原，蒙古包住宿，烤全羊宴。</p></div>
+      <div class="why-card reveal"><div class="icon">🎁</div><h3 style="font-size:1rem;">赠品超¥539</h3><p class="text-sm" style="color:var(--gray-500);">牛肝干礼盒+纪念T恤+完赛奖牌+专业摄影，参赛包价值远超报名费。</p></div>
+    </div>
+
+    <!-- 套餐选择 -->
+    <div class="feature-grid cols-3" style="margin-bottom:2rem;">
+      <div class="pricing-card featured reveal">
+        <div class="badge">🔥 推荐</div>
+        <div class="pricing-name">早鸟参赛</div>
+        <div class="pricing-price">¥1,780<small>/组</small></div>
+        <p style="font-size:.8rem;color:var(--danger);">限前20组</p>
+        <ul class="pricing-features">
+          <li>1人+1狗 · 3天2晚全包</li>
+          <li>4大互动项目参赛资格</li>
+          <li>冠军奖金 ¥8,000</li>
+          <li>赠品价值超 ¥539</li>
+        </ul>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-name">标准参赛</div>
+        <div class="pricing-price">¥1,980<small>/组</small></div>
+        <ul class="pricing-features">
+          <li>1人+1狗 · 3天2晚全包</li>
+          <li>4大互动项目参赛资格</li>
+          <li>冠军奖金 ¥8,000</li>
+          <li>赠品价值超 ¥539</li>
+        </ul>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-name">观摩票</div>
+        <div class="pricing-price">¥1,280<small>/人</small></div>
+        <ul class="pricing-features">
+          <li>不参赛，纯享受草原假期</li>
+          <li>3天2晚住宿+餐饮全包</li>
+          <li>含礼包+摄影师跟拍</li>
+          <li>欢迎带狗围观</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 报名表单 -->
+    <div class="reg-form reveal">
+      <h2 style="text-align:center;margin-bottom:.5rem;">📝 报名信息</h2>
+      <p style="text-align:center;color:var(--gray-500);margin-bottom:2rem;font-size:.9rem;">填写后我们会微信联系确认，48小时内完成支付锁定名额</p>
+
+      <div class="form-group">
+        <label class="form-label">套餐选择 <span class="required">*</span></label>
+        <select class="form-select" id="package-select">
+          <option value="early">早鸟参赛 ¥1,780（限前20组）</option>
+          <option value="full">标准参赛 ¥1,980</option>
+          <option value="watch">观摩票 ¥1,280</option>
+        </select>
+        <p style="text-align:right;font-size:1.3rem;font-weight:800;color:var(--brown);margin-top:.5rem;" id="calc-price">¥1,780</p>
+      </div>
+
+      <div class="form-group"><label class="form-label">姓名 <span class="required">*</span></label><input type="text" class="form-input" placeholder="您的姓名"></div>
+      <div class="form-group"><label class="form-label">手机号 / 微信号 <span class="required">*</span></label><input type="text" class="form-input" placeholder="方便我们联系确认"></div>
+      <div class="form-group"><label class="form-label">所在城市</label><input type="text" class="form-input" placeholder="如：北京"></div>
+      <div class="feature-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="form-group"><label class="form-label">狗狗名字</label><input type="text" class="form-input" placeholder="你家毛孩子的名字"></div>
+        <div class="form-group"><label class="form-label">狗狗品种</label><input type="text" class="form-input" placeholder="如：柯基"></div>
+      </div>
+      <div class="form-group"><label class="form-label">特殊需求 / 备注</label><textarea class="form-textarea" placeholder="如：第二只狗加收¥300、过敏信息、住宿偏好等"></textarea></div>
+
+      <button class="btn btn-gold btn-block btn-lg" style="margin-top:1rem;">📤 提交报名</button>
+      <p style="text-align:center;font-size:.75rem;color:var(--gray-500);margin-top:.75rem;">提交后将通过微信联系确认并支付</p>
+
+      <div class="pay-guide">
+        <h4 style="margin-bottom:.5rem;">💳 支付方式</h4>
+        <p style="font-size:.85rem;color:var(--gray-700);">提交表单后我们加微信确认 → 微信/支付宝转账 → 锁定名额<br>一个人搞的，没接支付系统，见谅 😊</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">🐂 牛香香</div><p style="font-size:.85rem;">内蒙古锡林郭勒盟多伦县 · 自有食品工厂<br>SC10415255102074</p></div>
+      <div><h4>快速导航</h4><a href="event.html">赛事介绍</a><a href="register.html">报名参赛</a><a href="products.html">产品中心</a><a href="diary.html">创业日记</a></div>
+      <div><h4>合作联系</h4><a href="cooperation.html">宠物店/达人合作</a><a href="sponsor.html">品牌赞助</a><a href="franchise.html">招商加盟</a><a href="about.html">关于我们</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 牛香香 · 草原人宠互动季 | 一个人搞的，多包涵。🐾</p></div>
+  </div>
+</footer>
+<a href="register.html" class="fab">📋</a>
+<script src="js/main.js"></script>
+</body>
+</html>

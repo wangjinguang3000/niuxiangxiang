@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="牛香香 · 草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。">
+<meta name="theme-color" content="#8B5E3C">
+<meta property="og:image" content="assets/images/hero_grassland_kolors.jpg">
+<title>牛香香 · 草原人宠互动季 | 带狗来草原撒野</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.hero-index { background-image: url('assets/images/hero_grassland_kolors.jpg'); }
+.hero-index h1 em { display: block; font-size: 1.1em; margin-top: .25rem; }
+.hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; color: rgba(255,255,255,.7); font-size: .8rem; animation: bounceDown 2s infinite; }
+@keyframes bounceDown { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(8px); } }
+.event-showcase { position: relative; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 50%, var(--cream) 100%); }
+.event-showcase::before { content:''; position:absolute; inset:0; background: url('assets/images/mongol_pattern.jpg') center/cover; opacity:.03; pointer-events:none; }
+.product-lifestyle { background: linear-gradient(180deg, var(--white) 0%, #F0E8D8 100%); }
+.prairie-strip { position:relative; padding:6rem 0; text-align:center; color:var(--white); background-image:url('assets/images/prairie_sunset_wide.jpg'); background-size:cover; background-position:center; background-attachment:fixed; }
+.prairie-strip::before { content:''; position:absolute; inset:0; background:rgba(26,24,22,.55); }
+.prairie-strip .container { position:relative; z-index:1; }
+.campfire-preview { background:linear-gradient(180deg, var(--night) 0%, #2A1A0A 100%); color:var(--white); position:relative; overflow:hidden; }
+.campfire-preview::before { content:''; position:absolute; inset:0; background:url('assets/images/campfire_night.jpg') center/cover; opacity:.3; }
+.community-bar { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; align-items:center; padding:1.5rem; background:linear-gradient(135deg,var(--brown-dark),var(--brown)); color:var(--white); border-radius:var(--radius-xl); margin:2rem 0; }
+.community-bar .platform { display:flex; align-items:center; gap:.4rem; background:rgba(255,255,255,.15); padding:.5rem 1rem; border-radius:20px; font-size:.85rem; transition:all .25s; }
+.community-bar .platform:hover { background:rgba(255,255,255,.25); transform:translateY(-1px); }
+.dog-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:.75rem; }
+@media(min-width:768px){ .dog-grid{grid-template-columns:repeat(4,1fr);} }
+.dog-grid .dog-card { border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:1; position:relative; cursor:pointer; }
+.dog-grid .dog-card img { width:100%; height:100%; object-fit:cover; transition:transform .5s; }
+.dog-grid .dog-card:hover img { transform:scale(1.1); }
+.dog-grid .dog-card .dog-label { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(0,0,0,.7)); color:white; padding:1rem .75rem .5rem; font-size:.8rem; font-weight:600; }
+.event-cta-bottom { background:linear-gradient(135deg,var(--green-dark),var(--brown)); color:var(--white); text-align:center; padding:3rem 1.5rem; border-radius:var(--radius-xl); }
+.event-cta-bottom h2 { color:var(--white); }
+</style>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">🐂 牛香香</a>
+    <button id="navToggle" class="nav-toggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <div id="navLinks" class="nav-links">
+      <a href="index.html" class="active">首页</a>
+      <a href="event.html">赛事介绍</a>
+      <a href="register.html">报名参赛</a>
+      <a href="diary.html">创业日记</a>
+      <a href="videos.html">视频中心</a>
+      <a href="products.html">产品</a>
+      <a href="cooperation.html">合作</a>
+      <a href="about.html">关于我们</a>
+      <a href="register.html" class="nav-cta">立即报名</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 英雄区 -->
+<section class="hero hero-index">
+  <div class="container">
+    <div class="hero-content">
+      <h1>带狗来草原撒野，<br><em>吃我做的牛肝干</em></h1>
+      <p>内蒙古锡林郭勒 · 自有工厂 · 人食标准</p>
+      <div class="hero-buttons">
+        <a href="register.html" class="btn btn-gold btn-lg">🔥 立即报名 ¥1,780起</a>
+        <a href="event.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,.6);color:var(--white);">了解赛事</a>
+      </div>
+      <p style="margin-top:1.5rem;font-size:.85rem;opacity:.7;max-width:480px;">做了十年牛肉干工厂，成本高三成被挤出市场。<br>转行宠物零食，标准不降——一个人办起这场草原狗狗互动节。</p>
+    </div>
+  </div>
+  <div class="hero-scroll">↓ 向下探索草原</div>
+</section>
+
+<!-- 草原数据条 -->
+<section class="section" style="padding:2rem 0;">
+  <div class="container">
+    <div class="stats-strip reveal">
+      <div class="stat"><div class="stat-val" data-count="100">100</div><div class="stat-label">参赛组数上限</div></div>
+      <div class="stat"><div class="stat-val">3天2晚</div><div class="stat-label">草原深度体验</div></div>
+      <div class="stat"><div class="stat-val">4大</div><div class="stat-label">互动赛事项目</div></div>
+      <div class="stat"><div class="stat-val">¥1,780</div><div class="stat-label">早鸟价/组起</div></div>
+      <div class="stat"><div class="stat-val">1人</div><div class="stat-label">操办全场</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 狗狗草原自由奔跑 -->
+<section class="section prairie-strip reveal">
+  <div class="container">
+    <h2 style="color:var(--white);">让狗狗在真正的草原上奔跑</h2>
+    <p style="opacity:.9;max-width:600px;margin:1rem auto;">不是城市草坪，不是宠物公园。<br>是锡林郭勒——真正的内蒙古大草原。</p>
+    <a href="event.html" class="btn btn-gold btn-lg" style="margin-top:1.5rem;">探索赛事 →</a>
+  </div>
+</section>
+
+<!-- 赛事预览 -->
+<section class="section event-showcase">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">🏕️ 草原盛事</span>
+      <h2>牛香香 · 草原人宠互动季</h2>
+      <p>不是专业犬赛，是一场3天2晚的草原狗狗度假团</p>
+    </div>
+
+    <!-- 赛事卡片 -->
+    <div class="feature-grid cols-3" style="margin-bottom:2rem;">
+      <div class="card reveal">
+        <div class="img-zoom"><img src="assets/images/dogs_prairie_play.jpg" alt="狗狗草原奔跑" class="card-img" loading="lazy"></div>
+        <div class="card-body">
+          <span class="section-tag" style="font-size:.65rem;">🐕 四大项目</span>
+          <h3 style="margin:.5rem 0;">不是比赛，是玩耍</h3>
+          <p class="text-sm" style="color:var(--gray-500);">定力王挑战 · 叼物接力 · 趣味障碍赛 · 才艺走秀——每一项都以"好玩"为第一原则。</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="img-zoom"><img src="assets/images/yurt_camp_sunset.jpg" alt="蒙古包营地" class="card-img" loading="lazy"></div>
+        <div class="card-body">
+          <span class="section-tag" style="font-size:.65rem;background:var(--green);">🏕️ 草原食宿</span>
+          <h3 style="margin:.5rem 0;">蒙古包+烤全羊</h3>
+          <p class="text-sm" style="color:var(--gray-500);">2晚蒙古包住宿 · 6餐全包 · 烤全羊欢迎宴 · 篝火晚会。不是廉价团，是走心体验。</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="img-zoom"><img src="assets/images/campfire_night.jpg" alt="篝火晚会" class="card-img" loading="lazy"></div>
+        <div class="card-body">
+          <span class="section-tag" style="font-size:.65rem;background:var(--fire);">🔥 篝火之夜</span>
+          <h3 style="margin:.5rem 0;">星空下的狗友聚会</h3>
+          <p class="text-sm" style="color:var(--gray-500);">篝火 · 星空 · 草原 · 狗狗——这不是旅行团，是一群爱狗人的草原大聚会。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 赛事套餐 -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">🎫 参赛套餐</span>
+      <h2>一人一狗 · 3天2晚 · 全包</h2>
+    </div>
+    <div class="feature-grid cols-3">
+      <div class="pricing-card featured reveal">
+        <div class="badge">🔥 推荐</div>
+        <div class="pricing-name">参赛套餐（早鸟）</div>
+        <div class="pricing-price">¥1,780<small>/组</small></div>
+        <p style="font-size:.8rem;color:var(--danger);margin-bottom:.5rem;">限前20组 · 省¥200</p>
+        <ul class="pricing-features">
+          <li>1人+1狗 · 3天2晚全包</li>
+          <li>蒙古包住宿 · 6餐全包</li>
+          <li>4大项目参赛资格</li>
+          <li>烤全羊欢迎宴</li>
+          <li>专业摄影师跟拍</li>
+          <li>480g牛肝干礼盒</li>
+          <li>人+狗责任险</li>
+          <li>完赛奖牌+纪念T恤</li>
+        </ul>
+        <a href="register.html" class="btn btn-gold btn-block">抢早鸟名额</a>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-name">参赛套餐（原价）</div>
+        <div class="pricing-price">¥1,980<small>/组</small></div>
+        <p style="font-size:.8rem;color:var(--gray-500);margin-bottom:.5rem;">标准价格</p>
+        <ul class="pricing-features">
+          <li>1人+1狗 · 3天2晚全包</li>
+          <li>蒙古包住宿 · 6餐全包</li>
+          <li>4大项目参赛资格</li>
+          <li>烤全羊欢迎宴</li>
+          <li>专业摄影师跟拍</li>
+          <li>480g牛肝干礼盒</li>
+        </ul>
+        <a href="register.html" class="btn btn-outline btn-block">立即报名</a>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-name">观摩票</div>
+        <div class="pricing-price">¥1,280<small>/人</small></div>
+        <p style="font-size:.8rem;color:var(--gray-500);margin-bottom:.5rem;">不参赛 · 纯享受</p>
+        <ul class="pricing-features">
+          <li>3天2晚住宿+餐饮全包</li>
+          <li>全程围观所有项目</li>
+          <li>含礼包+摄影师跟拍</li>
+          <li>欢迎带狗围观</li>
+        </ul>
+        <a href="register.html" class="btn btn-outline btn-block">购买观摩票</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 草原生活照 -->
+<section class="section product-lifestyle">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">📸 草原瞬间</span>
+      <h2>这就是我们的草原</h2>
+      <p>每一张照片，都是真实草原的味道</p>
+    </div>
+    <div class="dog-grid reveal">
+      <div class="dog-card" data-lightbox="assets/images/dogs_prairie_play.jpg">
+        <img src="assets/images/dogs_prairie_play.jpg" alt="狗狗草原玩耍" loading="lazy">
+        <div class="dog-label">🐕 自由奔跑</div>
+      </div>
+      <div class="dog-card" data-lightbox="assets/images/dog_obstacle.jpg">
+        <img src="assets/images/dog_obstacle.jpg" alt="狗狗障碍赛" loading="lazy">
+        <div class="dog-label">🏃 趣味障碍</div>
+      </div>
+      <div class="dog-card" data-lightbox="assets/images/dog_fashion_show.jpg">
+        <img src="assets/images/dog_fashion_show.jpg" alt="狗狗走秀" loading="lazy">
+        <div class="dog-label">👗 才艺走秀</div>
+      </div>
+      <div class="dog-card" data-lightbox="assets/images/yurt_camp_sunset.jpg">
+        <img src="assets/images/yurt_camp_sunset.jpg" alt="蒙古包营地" loading="lazy">
+        <div class="dog-label">🏕️ 草原营地</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 产品展示 -->
+<section class="section" style="background:var(--cream-dark);">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <span class="section-tag">🦴 赛事同款</span>
+        <h2>牛肝干——配料表只有牛肝</h2>
+        <p style="color:var(--gray-700);margin:1rem 0;">锡林郭勒草原散养牛 · 新鲜牛肝 · 低温烘焙<br>0添加 · 高蛋白29g/100g · 人也能吃</p>
+        <div class="feature-grid" style="grid-template-columns:1fr 1fr;margin:1.5rem 0;">
+          <div class="card" style="background:var(--white);"><div class="card-body" style="text-align:center;">
+            <div class="card-icon">🐂</div><p class="text-sm" style="font-weight:600;">纯牛肝·0添加</p>
+          </div></div>
+          <div class="card" style="background:var(--white);"><div class="card-body" style="text-align:center;">
+            <div class="card-icon">🏔️</div><p class="text-sm" style="font-weight:600;">锡林郭勒草原</p>
+          </div></div>
+          <div class="card" style="background:var(--white);"><div class="card-body" style="text-align:center;">
+            <div class="card-icon">💪</div><p class="text-sm" style="font-weight:600;">高蛋白29g/100g</p>
+          </div></div>
+          <div class="card" style="background:var(--white);"><div class="card-body" style="text-align:center;">
+            <div class="card-icon">🏭</div><p class="text-sm" style="font-weight:600;">自有食品工厂</p>
+          </div></div>
+        </div>
+        <a href="products.html" class="btn btn-primary">查看产品 →</a>
+      </div>
+      <div class="reveal img-zoom">
+        <img src="assets/images/product_grassland.jpg" alt="牛香香牛肝干" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 创始人故事 -->
+<section class="section campfire-preview">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="two-col">
+      <div class="reveal">
+        <span class="section-tag" style="background:var(--fire);">📖 创始人故事</span>
+        <h2 style="color:var(--white);">做了十年牛肉干工厂，被低价挤出市场</h2>
+        <p style="opacity:.9;margin:1rem 0;">坚持草原散养牛、真材实料。成本比同行高三成。良心成了包袱。</p>
+        <p style="opacity:.85;">后来想通了——不做人食了，做宠物零食。标准不降。人食标准做给毛孩子。</p>
+        <p style="opacity:.7;font-size:.9rem;margin-top:.5rem;">——牛香香创始人，一个人在内蒙古</p>
+        <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:var(--white);margin-top:1rem;">了解品牌故事 →</a>
+      </div>
+      <div class="reveal" style="text-align:center;">
+        <img src="assets/images/founder.jpg" alt="牛香香创始人" style="border-radius:var(--radius-lg);max-width:280px;margin:0 auto;box-shadow:0 8px 40px rgba(0,0,0,.4);" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 合作入口 -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">🤝 一起搞事情</span>
+      <h2>合作共赢</h2>
+      <p>宠物店 · 达人KOL · 品牌赞助 · 招商加盟</p>
+    </div>
+    <div class="feature-grid cols-4">
+      <a href="cooperation.html?tab=petstore" class="flow-card reveal" style="text-decoration:none;color:inherit;">
+        <div class="icon">🏪</div>
+        <h3>宠物店合作</h3>
+        <p>寄售牛肝干，30-40%毛利。代理赛事报名享佣金</p>
+      </a>
+      <a href="cooperation.html?tab=kol" class="flow-card reveal" style="text-decoration:none;color:inherit;">
+        <div class="icon">📱</div>
+        <h3>达人KOL</h3>
+        <p>1-5万粉KOC，纯样品置换。佣金合作，共创内容</p>
+      </a>
+      <a href="sponsor.html" class="flow-card reveal" style="text-decoration:none;color:inherit;">
+        <div class="icon">🏆</div>
+        <h3>品牌赞助</h3>
+        <p>冠名互动项目、礼包植入、现场品牌露出</p>
+      </a>
+      <a href="franchise.html" class="flow-card reveal" style="text-decoration:none;color:inherit;">
+        <div class="icon">🚀</div>
+        <h3>招商加盟</h3>
+        <p>区域合伙人招募。共享品牌+产品+赛事IP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 全平台关注 -->
+<section class="section" style="padding:2rem 0;">
+  <div class="container">
+    <div class="community-bar reveal">
+      <span style="font-weight:700;">📱 关注牛香香：</span>
+      <span class="platform">🎵 抖音</span>
+      <span class="platform">📕 小红书</span>
+      <span class="platform">🎬 视频号</span>
+      <span class="platform">⚡ 快手</span>
+      <span style="font-size:.8rem;opacity:.7;">搜索"牛香香创业日记"</span>
+    </div>
+  </div>
+</section>
+
+<!-- 最终CTA -->
+<section class="section">
+  <div class="container">
+    <div class="event-cta-bottom reveal">
+      <h2>准备好带狗来草原撒野了吗？</h2>
+      <p style="opacity:.9;margin:1rem 0;">早鸟价 ¥1,780/组 · 仅限前20组 · 余位有限</p>
+      <a href="register.html" class="btn btn-gold btn-lg">🔥 抢早鸟名额</a>
+      <p style="font-size:.8rem;opacity:.7;margin-top:1rem;">首季限额60-100组，报满即止</p>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">🐂 牛香香</div>
+        <p style="font-size:.85rem;">内蒙古锡林郭勒盟多伦县 · 自有食品工厂<br>人食标准做宠物零食 · SC10415255102074</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <a href="event.html">赛事介绍</a>
+        <a href="register.html">报名参赛</a>
+        <a href="products.html">产品中心</a>
+        <a href="diary.html">创业日记</a>
+        <a href="videos.html">视频中心</a>
+      </div>
+      <div>
+        <h4>合作联系</h4>
+        <a href="cooperation.html">宠物店/达人合作</a>
+        <a href="sponsor.html">品牌赞助</a>
+        <a href="franchise.html">招商加盟</a>
+        <a href="about.html">关于我们</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 牛香香 · 草原人宠互动季 | 一个人搞的，多包涵。🐾</p>
+    </div>
+  </div>
+</footer>
+
+<a href="register.html" class="fab" aria-label="立即报名">📋</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="牛香香合作大厅——宠物店寄售合作、达人KOL共创、品牌赞助。一起搞事情，共享草原赛事IP资源。">
+<meta name="theme-color" content="#8B5E3C">
+<title>合作大厅 | 牛香香</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.coop-tabs { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2rem; justify-content:center; }
+.coop-tab { padding:.6rem 1.25rem; border-radius:20px; font-weight:600; font-size:.9rem; background:var(--white); border:1.5px solid var(--gray-300); cursor:pointer; transition:all .2s; }
+.coop-tab:hover,.coop-tab.active { background:var(--brown); color:var(--white); border-color:var(--brown); }
+.coop-panel { display:none; }
+.coop-panel.active { display:block; }
+@media(min-width:768px){ .coop-tab { padding:.75rem 2rem; } }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">🐂 牛香香</a>
+    <button id="navToggle" class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <div id="navLinks" class="nav-links">
+      <a href="index.html">首页</a><a href="event.html">赛事介绍</a><a href="register.html">报名参赛</a><a href="diary.html">创业日记</a><a href="videos.html">视频中心</a><a href="products.html">产品</a><a href="cooperation.html" class="active">合作</a><a href="about.html">关于我们</a><a href="register.html" class="nav-cta">立即报名</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container"><h1>🤝 合作大厅</h1><p>宠物店 · 达人KOL · 品牌赞助 · 一起搞事情</p></div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="coop-tabs">
+      <button class="coop-tab active" data-panel="petstore">🏪 宠物店合作</button>
+      <button class="coop-tab" data-panel="kol">📱 达人KOL合作</button>
+      <button class="coop-tab" data-panel="sponsor">🏆 品牌赞助</button>
+    </div>
+
+    <div class="coop-panel active" id="panel-petstore">
+      <div class="two-col">
+        <div class="reveal">
+          <h2>宠物店/宠物医院寄售合作</h2>
+          <p style="margin:1rem 0;">我们在找北京+天津<strong>30-50家</strong>宠物店/宠物医院作为线下寄售点和赛事报名点。</p>
+          <div class="feature-grid" style="grid-template-columns:1fr 1fr;margin:1.5rem 0;">
+            <div class="card"><div class="card-body"><h3 style="color:var(--brown);">30-40%</h3><p class="text-sm">毛利空间</p></div></div>
+            <div class="card"><div class="card-body"><h3 style="color:var(--brown);">0成本</h3><p class="text-sm">免费试吃装+海报</p></div></div>
+            <div class="card"><div class="card-body"><h3 style="color:var(--brown);">15%</h3><p class="text-sm">赛事报名推荐佣金</p></div></div>
+            <div class="card"><div class="card-body"><h3 style="color:var(--brown);">全国</h3><p class="text-sm">首批合作锁区域保护</p></div></div>
+          </div>
+          <h3>你能得到什么</h3>
+          <ul style="list-style:disc;padding-left:1.5rem;font-size:.9rem;margin-top:.5rem;">
+            <li>免费试吃装+活动海报+展示物料</li>
+            <li>寄售牛肝干，30-40%毛利</li>
+            <li>代理赛事报名，每推荐1组得15%佣金（≈¥300）</li>
+            <li>区域保护：同一区域优先合作</li>
+            <li>品牌背书："牛香香官方合作宠物店"</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="card"><div class="card-body">
+            <h3>📋 合作申请</h3>
+            <div class="form-group"><label class="form-label">店铺名称</label><input type="text" class="form-input" placeholder="你的宠物店名字"></div>
+            <div class="form-group"><label class="form-label">所在城市+区域</label><input type="text" class="form-input" placeholder="如：北京·朝阳区"></div>
+            <div class="form-group"><label class="form-label">联系人+电话/微信</label><input type="text" class="form-input" placeholder="方便我们联系你"></div>
+            <button class="btn btn-primary btn-block">提交申请</button>
+            <p class="text-sm" style="text-align:center;color:var(--gray-500);margin-top:.5rem;">提交后48小时内微信联系</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="coop-panel" id="panel-kol">
+      <div class="two-col">
+        <div class="reveal">
+          <h2>达人KOL合作</h2>
+          <p style="margin:1rem 0;">我们在找<strong>尾部达人（1-5万粉）和KOC</strong>合作。不追求大V——真实的小博主才是信任利器。</p>
+          <div class="table-wrap" style="margin:1.5rem 0;">
+            <table class="compare-table">
+              <tr><th>粉丝量级</th><th>合作模式</th><th>你能得到</th></tr>
+              <tr><td>1-5万粉</td><td>纯样品置换</td><td>免费牛肝干+佣金分销</td></tr>
+              <tr><td>5-20万粉</td><td>底价+佣金</td><td>底价供货+佣金+素材共享</td></tr>
+              <tr><td>20万+粉</td><td>赛事合作</td><td>赛事现场拍摄+品牌联合</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="card"><div class="card-body">
+            <h3>📱 KOL合作申请</h3>
+            <div class="form-group"><label class="form-label">账号名称+平台</label><input type="text" class="form-input" placeholder="如：XXX的柯基日常 · 抖音"></div>
+            <div class="form-group"><label class="form-label">粉丝数</label><input type="text" class="form-input" placeholder="如：3.5万"></div>
+            <div class="form-group"><label class="form-label">联系方式（微信/手机）</label><input type="text" class="form-input"></div>
+            <button class="btn btn-primary btn-block">提交申请</button>
+            <p class="text-sm" style="text-align:center;color:var(--gray-500);margin-top:.5rem;">看到后会联系你，给你寄试吃装</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="coop-panel" id="panel-sponsor">
+      <div class="reveal" style="text-align:center;">
+        <h2>🏆 品牌赞助合作</h2>
+        <p style="max-width:600px;margin:1rem auto;">你的品牌想触达<strong>60-100组精准养宠家庭</strong>吗？</p>
+      </div>
+      <div class="feature-grid cols-2">
+        <div class="card reveal"><div class="card-body">
+          <h3>🏅 冠名赞助</h3>
+          <p class="text-sm" style="color:var(--gray-500);margin:.5rem 0;">冠名一个互动项目</p>
+          <ul style="list-style:disc;padding-left:1.5rem;font-size:.8rem;">
+            <li>项目命名为"XX品牌·定力王挑战"</li>
+            <li>开幕式+颁奖晚宴品牌露出</li>
+            <li>所有传播物料logo露出</li>
+          </ul>
+        </div></div>
+        <div class="card reveal"><div class="card-body">
+          <h3>🎁 礼包赞助</h3>
+          <p class="text-sm" style="color:var(--gray-500);margin:.5rem 0;">产品进入参赛包</p>
+          <ul style="list-style:disc;padding-left:1.5rem;font-size:.8rem;">
+            <li>60-100份精准触达</li>
+            <li>适合：狗粮/宠物用品/户外装备</li>
+          </ul>
+        </div></div>
+        <div class="card reveal"><div class="card-body">
+          <h3>📸 内容共创</h3>
+          <p class="text-sm" style="color:var(--gray-500);margin:.5rem 0;">品牌+赛事联合传播</p>
+          <ul style="list-style:disc;padding-left:1.5rem;font-size:.8rem;">
+            <li>赛事全程内容中品牌植入</li>
+            <li>抖音/小红书联合话题</li>
+          </ul>
+        </div></div>
+        <div class="card reveal"><div class="card-body">
+          <h3>🎯 定制合作</h3>
+          <p class="text-sm" style="color:var(--gray-500);margin:.5rem 0;">你的想法，我们聊聊</p>
+          <a href="sponsor.html" class="btn btn-outline btn-block" style="margin-top:.5rem;">查看详细方案</a>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">🐂 牛香香</div><p style="font-size:.85rem;">内蒙古锡林郭勒盟多伦县 · 自有食品工厂<br>SC10415255102074</p></div>
+      <div><h4>快速导航</h4><a href="event.html">赛事介绍</a><a href="register.html">报名参赛</a><a href="products.html">产品中心</a><a href="diary.html">创业日记</a></div>
+      <div><h4>合作联系</h4><a href="cooperation.html">宠物店/达人合作</a><a href="sponsor.html">品牌赞助</a><a href="franchise.html">招商加盟</a><a href="about.html">关于我们</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 牛香香 · 草原人宠互动季 | 一个人搞的，多包涵。🐾</p></div>
+  </div>
+</footer>
+<a href="register.html" class="fab">📋</a>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var tabs=document.querySelectorAll(".coop-tab");
+  tabs.forEach(function(t){t.addEventListener("click",function(){
+    tabs.forEach(function(x){x.classList.remove("active")});
+    this.classList.add("active");
+    var id="panel-"+this.getAttribute("data-panel");
+    document.querySelectorAll(".coop-panel").forEach(function(p){p.classList.remove("active")});
+    document.getElementById(id).classList.add("active");
+  })});
+});
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
