@@ -1,0 +1,3 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://wangjinguang3000.github.io/niuxiangxiang/sitemap.xml
