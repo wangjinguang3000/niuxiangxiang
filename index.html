@@ -3,37 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="草原爱宠营 · 草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。">
+<meta name="description" content="草原爱宠营·草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。">
+<meta name="keywords" content="草原爱宠营,狗狗大赛,草原赛事,人宠互动,牛肝干,宠物零食,内蒙古">
+<meta name="author" content="草原爱宠营">
 <meta name="theme-color" content="#8B5E3C">
-<meta property="og:image" content="assets/images/hero_grassland_kolors.jpg">
+<link rel="canonical" href="https://niuxiangxiang.com/">
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="草原人宠互动季 | 草原爱宠营">
+<meta property="og:description" content="草原爱宠营·草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。">
+<meta property="og:image" content="https://niuxiangxiang.com/assets/images/hero_grassland_kolors.jpg">
+<meta property="og:url" content="https://niuxiangxiang.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="草原爱宠营">
+<meta property="og:locale" content="zh_CN">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="草原人宠互动季 | 草原爱宠营">
+<meta name="twitter:description" content="草原爱宠营·草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。">
+<meta name="twitter:image" content="https://niuxiangxiang.com/assets/images/hero_grassland_kolors.jpg">
+<!-- 微信分享 -->
+<meta itemprop="name" content="草原人宠互动季 | 草原爱宠营">
+<meta itemprop="description" content="草原爱宠营·草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。">
+<meta itemprop="image" content="https://niuxiangxiang.com/assets/images/hero_grassland_kolors.jpg">
 <title>草原人宠互动季 | 草原爱宠营</title>
 <link rel="stylesheet" href="css/style.css">
-<style>
-.hero-index { background-image: url('assets/images/hero_grassland_kolors.jpg'); }
-.hero-index h1 em { display: block; font-size: 1.1em; margin-top: .25rem; }
-.hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; color: rgba(255,255,255,.7); font-size: .8rem; animation: bounceDown 2s infinite; }
-@keyframes bounceDown { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(8px); } }
-.event-showcase { position: relative; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 50%, var(--cream) 100%); }
-.event-showcase::before { content:''; position:absolute; inset:0; background: url('assets/images/mongol_pattern.jpg') center/cover; opacity:.03; pointer-events:none; }
-.product-lifestyle { background: linear-gradient(180deg, var(--white) 0%, #F0E8D8 100%); }
-.prairie-strip { position:relative; padding:6rem 0; text-align:center; color:var(--white); background-image:url('assets/images/prairie_sunset_wide.jpg'); background-size:cover; background-position:center; background-attachment:fixed; }
-.prairie-strip::before { content:''; position:absolute; inset:0; background:rgba(26,24,22,.55); }
-.prairie-strip .container { position:relative; z-index:1; }
-.campfire-preview { background:linear-gradient(180deg, var(--night) 0%, #2A1A0A 100%); color:var(--white); position:relative; overflow:hidden; }
-.campfire-preview::before { content:''; position:absolute; inset:0; background:url('assets/images/campfire_night.jpg') center/cover; opacity:.3; }
-.community-bar { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; align-items:center; padding:1.5rem; background:linear-gradient(135deg,var(--brown-dark),var(--brown)); color:var(--white); border-radius:var(--radius-xl); margin:2rem 0; }
-.community-bar .platform { display:flex; align-items:center; gap:.4rem; background:rgba(255,255,255,.15); padding:.5rem 1rem; border-radius:20px; font-size:.85rem; transition:all .25s; }
-.community-bar .platform:hover { background:rgba(255,255,255,.25); transform:translateY(-1px); }
-.dog-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:.75rem; }
-@media(min-width:768px){ .dog-grid{grid-template-columns:repeat(4,1fr);} }
-.dog-grid .dog-card { border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:1; position:relative; cursor:pointer; }
-.dog-grid .dog-card img { width:100%; height:100%; object-fit:cover; transition:transform .5s; }
-.dog-grid .dog-card:hover img { transform:scale(1.1); }
-.dog-grid .dog-card .dog-label { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(0,0,0,.7)); color:white; padding:1rem .75rem .5rem; font-size:.8rem; font-weight:600; }
-.event-cta-bottom { background:linear-gradient(135deg,var(--green-dark),var(--brown)); color:var(--white); text-align:center; padding:3rem 1.5rem; border-radius:var(--radius-xl); }
-.event-cta-bottom h2 { color:var(--white); }
-</style>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsEvent",
+  "name": "草原人宠互动季",
+  "description": "草原爱宠营·草原人宠互动季——带狗来草原撒野，吃我做的牛肝干。内蒙古锡林郭勒草原自有工厂，一个人办的大型草原狗狗赛事。",
+  "url": "https://niuxiangxiang.com/",
+  "organizer": {
+    "@type": "Organization",
+    "name": "草原爱宠营",
+    "url": "https://niuxiangxiang.com"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "内蒙古锡林郭勒草原",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "内蒙古",
+      "addressLocality": "锡林郭勒"
+    }
+  }
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -68,8 +85,43 @@
   }
 }
 </script>
+<style>
+.hero-index { background-image: url('assets/images/hero_grassland_kolors.jpg'); }
+.hero-index h1 em { display: block; font-size: 1.1em; margin-top: .25rem; }
+.hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; color: rgba(255,255,255,.7); font-size: .8rem; animation: bounceDown 2s infinite; }
+@keyframes bounceDown { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(8px); } }
+.event-showcase { position: relative; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 50%, var(--cream) 100%); }
+.event-showcase::before { content:''; position:absolute; inset:0; background: url('assets/images/mongol_pattern.jpg') center/cover; opacity:.03; pointer-events:none; }
+.product-lifestyle { background: linear-gradient(180deg, var(--white) 0%, #F0E8D8 100%); }
+.prairie-strip { position:relative; padding:6rem 0; text-align:center; color:var(--white); background-image:url('assets/images/prairie_sunset_wide.jpg'); background-size:cover; background-position:center; background-attachment:fixed; }
+.prairie-strip::before { content:''; position:absolute; inset:0; background:rgba(26,24,22,.55); }
+.prairie-strip .container { position:relative; z-index:1; }
+.campfire-preview { background:linear-gradient(180deg, var(--night) 0%, #2A1A0A 100%); color:var(--white); position:relative; overflow:hidden; }
+.campfire-preview::before { content:''; position:absolute; inset:0; background:url('assets/images/campfire_night.jpg') center/cover; opacity:.3; }
+.community-bar { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; align-items:center; padding:1.5rem; background:linear-gradient(135deg,var(--brown-dark),var(--brown)); color:var(--white); border-radius:var(--radius-xl); margin:2rem 0; }
+.community-bar .platform { display:flex; align-items:center; gap:.4rem; background:rgba(255,255,255,.15); padding:.5rem 1rem; border-radius:20px; font-size:.85rem; transition:all .25s; }
+.community-bar .platform:hover { background:rgba(255,255,255,.25); transform:translateY(-1px); }
+.dog-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:.75rem; }
+@media(min-width:768px){ .dog-grid{grid-template-columns:repeat(4,1fr);} }
+.dog-grid .dog-card { border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:1; position:relative; cursor:pointer; }
+.dog-grid .dog-card img { width:100%; height:100%; object-fit:cover; transition:transform .5s; }
+.dog-grid .dog-card:hover img { transform:scale(1.1); }
+.dog-grid .dog-card .dog-label { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(0,0,0,.7)); color:white; padding:1rem .75rem .5rem; font-size:.8rem; font-weight:600; }
+.event-cta-bottom { background:linear-gradient(135deg,var(--green-dark),var(--brown)); color:var(--white); text-align:center; padding:3rem 1.5rem; border-radius:var(--radius-xl); }
+.event-cta-bottom h2 { color:var(--white); }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 </head>
 <body>
+
 
 <!-- 导航 -->
 <nav class="nav">
@@ -79,9 +131,10 @@
       <span></span><span></span><span></span>
     </button>
     <div id="navLinks" class="nav-links">
-      <a href="index.html" class="active">首页</a>
+      <a href="index.html">首页</a>
       <a href="event.html">赛事介绍</a>
       <a href="register.html">报名参赛</a>
+      <a href="blog.html">博客</a>
       <a href="diary.html">创业日记</a>
       <a href="videos.html">视频中心</a>
       <a href="products.html">产品</a>
@@ -395,5 +448,20 @@
 <a href="register.html" class="fab" aria-label="立即报名">📋</a>
 
 <script src="js/main.js"></script>
+
+<!-- 百度自动推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 </body>
 </html>

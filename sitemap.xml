@@ -1,13 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/</loc><priority>1.0</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/event.html</loc><priority>0.9</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/register.html</loc><priority>0.9</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/products.html</loc><priority>0.8</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/cooperation.html</loc><priority>0.8</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/diary.html</loc><priority>0.7</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/videos.html</loc><priority>0.7</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/about.html</loc><priority>0.6</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/sponsor.html</loc><priority>0.6</priority></url>
-<url><loc>https://wangjinguang3000.github.io/niuxiangxiang/community.html</loc><priority>0.6</priority></url>
+<url><loc>https://niuxiangxiang.com/</loc><priority>1.0</priority><changefreq>daily</changefreq></url>
+<url><loc>https://niuxiangxiang.com/event.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/register.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/products.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/blog.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/cooperation.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/franchise.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/diary.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/videos.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/about.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/sponsor.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/community.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+<!-- 博客文章 -->
+<url><loc>https://niuxiangxiang.com/blog/dog-beef-liver-guide.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/blog/grassland-event-guide.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/blog/factory-transformation-story.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/blog/summer-dog-appetite-tips.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/blog/pet-treat-selection-guide.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://niuxiangxiang.com/blog/why-take-dog-to-grassland.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 </urlset>

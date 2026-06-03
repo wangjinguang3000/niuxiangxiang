@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="草原爱宠营博客——宠物养护知识、草原赛事动态、牛肝干制作揭秘。最实用的养狗干货，每周更新。">
+<meta name="keywords" content="宠物博客,养狗知识,狗狗养护,牛肝干,草原赛事,宠物健康">
+<meta name="author" content="草原爱宠营">
+<meta name="theme-color" content="#8B5E3C">
+<link rel="canonical" href="https://niuxiangxiang.com/blog.html">
+<meta property="og:title" content="宠物博客 | 草原爱宠营">
+<meta property="og:description" content="草原爱宠营博客——宠物养护知识、草原赛事动态、牛肝干制作揭秘。最实用的养狗干货，每周更新。">
+<meta property="og:image" content="https://niuxiangxiang.com/assets/images/hero_grassland_kolors.jpg">
+<meta property="og:url" content="https://niuxiangxiang.com/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="草原爱宠营">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta itemprop="name" content="宠物博客 | 草原爱宠营">
+<meta itemprop="description" content="草原爱宠营博客——宠物养护知识、草原赛事动态、牛肝干制作揭秘。">
+<meta itemprop="image" content="https://niuxiangxiang.com/assets/images/hero_grassland_kolors.jpg">
+<title>宠物博客 | 草原爱宠营</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.blog-hero { background:linear-gradient(135deg,var(--brown-dark),var(--night)); color:var(--white); text-align:center; padding:calc(61px + 3rem) 1.25rem 3rem; }
+.blog-hero h1 { color:var(--white); font-size:2rem; }
+.blog-hero p { color:var(--cream); max-width:600px; margin:.5rem auto 0; }
+.blog-grid { display:grid; grid-template-columns:1fr; gap:1.5rem; padding:3rem 1.25rem; max-width:1000px; margin:0 auto; }
+@media(min-width:768px){ .blog-grid{grid-template-columns:repeat(2,1fr);} }
+.blog-card { background:var(--white); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-sm); transition:all .3s; }
+.blog-card:hover { box-shadow:var(--shadow-lg); transform:translateY(-4px); }
+.blog-card-img { width:100%; height:200px; object-fit:cover; background:var(--cream); }
+.blog-card-body { padding:1.25rem; }
+.blog-card-body .tag { display:inline-block; background:var(--green); color:var(--white); padding:.2rem .6rem; border-radius:12px; font-size:.75rem; margin-bottom:.5rem; }
+.blog-card-body h3 { font-size:1.1rem; margin-bottom:.5rem; }
+.blog-card-body h3 a { color:var(--brown-dark); text-decoration:none; }
+.blog-card-body h3 a:hover { color:var(--green-dark); }
+.blog-card-body .excerpt { color:var(--gray-600); font-size:.85rem; line-height:1.6; margin-bottom:.75rem; }
+.blog-card-body .meta { font-size:.75rem; color:var(--gray-500); }
+.blog-cta { background:linear-gradient(135deg,var(--cream),var(--cream-dark)); text-align:center; padding:3rem 1.25rem; }
+.blog-cta h2 { color:var(--brown-dark); }
+.blog-cta .btn { margin-top:1rem; }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">🐂 草原爱宠营</a>
+    <button id="navToggle" class="nav-toggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <div id="navLinks" class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="event.html">赛事介绍</a>
+      <a href="register.html">报名参赛</a>
+      <a href="blog.html">博客</a>
+      <a href="diary.html">创业日记</a>
+      <a href="videos.html">视频中心</a>
+      <a href="products.html">产品</a>
+      <a href="cooperation.html">合作</a>
+      <a href="about.html">关于我们</a>
+      <a href="register.html" class="nav-cta">立即报名</a>
+    </div>
+  </div>
+</nav>
+
+<section class="blog-hero">
+  <h1>🐾 草原爱宠营·宠物博客</h1>
+  <p>养狗干货、赛事动态、产品揭秘——每周更新，做最懂狗的宠物品牌</p>
+</section>
+
+<section class="blog-grid" id="blogGrid">
+  <!-- JS动态填充 -->
+</section>
+
+<section class="blog-cta">
+  <h2>🐕 加入草原爱宠营社群</h2>
+  <p>扫码加微信，进群和全国狗友一起交流</p>
+  <a href="community.html" class="btn btn-primary">进入社群 →</a>
+</section>
+
+<footer id="footer"></footer>
+
+<script>
+// ===== 文章数据（添加新文章只需在这里加一行）=====
+const articles = [
+  {
+    title: "狗狗能吃牛肝吗？宠物营养师一次说清楚",
+    slug: "dog-beef-liver-guide",
+    date: "2026-06-01",
+    tag: "养护知识",
+    excerpt: "牛肝是狗狗的超级食物——高蛋白、富含维生素A和铁。但喂食量、喂食频率有讲究。我们请宠物营养师一次性讲清楚。",
+    image: "assets/images/product_grassland.jpg"
+  },
+  {
+    title: "草原人宠互动季——3天2晚完整攻略",
+    slug: "grassland-event-guide",
+    date: "2026-05-25",
+    tag: "赛事动态",
+    excerpt: "带狗来草原撒野需要准备什么？住宿条件怎么样？4大互动项目怎么玩？这篇攻略全都告诉你。",
+    image: "assets/images/prairie_sunset_wide.jpg"
+  },
+  {
+    title: "从牛肉干工厂到宠物零食——一个工厂老板的转型之路",
+    slug: "factory-transformation-story",
+    date: "2026-05-20",
+    tag: "品牌故事",
+    excerpt: "做了十年牛肉干，被低价挤出了市场。转行做宠物零食，配料表只有新鲜牛肝，人食标准不变。这是我的真实故事。",
+    image: "assets/images/campfire_night.jpg"
+  },
+  {
+    title: "夏天狗狗食欲不好怎么办？5个实用技巧",
+    slug: "summer-dog-appetite-tips",
+    date: "2026-05-15",
+    tag: "养护知识",
+    excerpt: "夏天到了，很多狗狗食欲下降。别担心，这5个方法帮你的毛孩子胃口大开——从饮水到零食搭配，全干货。",
+    image: "assets/images/hero_grassland_kolors.jpg"
+  },
+  {
+    title: "宠物零食怎么选？配料表教你一眼看穿",
+    slug: "pet-treat-selection-guide",
+    date: "2026-05-10",
+    tag: "养护知识",
+    excerpt: "市面上的宠物零食琳琅满目，怎么挑？记住一个原则：配料表越短越好。我们来拆解配料表里的门道。",
+    image: "assets/images/product_grassland.jpg"
+  },
+  {
+    title: "为什么要带狗去草原？对狗狗的5大好处",
+    slug: "why-take-dog-to-grassland",
+    date: "2026-05-05",
+    tag: "养护知识",
+    excerpt: "城市里的狗狗多久没尽情奔跑了？草原对狗狗的身心健康有意想不到的好处——从关节到情绪，全方位解析。",
+    image: "assets/images/prairie_sunset_wide.jpg"
+  }
+];
+
+// 渲染文章列表
+const grid = document.getElementById('blogGrid');
+articles.forEach(a => {
+  grid.innerHTML += `
+    <article class="blog-card">
+      <img class="blog-card-img" src="${a.image}" alt="${a.title}" loading="lazy" onerror="this.src='assets/images/hero_grassland_kolors.jpg'">
+      <div class="blog-card-body">
+        <span class="tag">${a.tag}</span>
+        <h3><a href="blog/${a.slug}.html">${a.title}</a></h3>
+        <p class="excerpt">${a.excerpt}</p>
+        <p class="meta">📅 ${a.date} · 草原爱宠营</p>
+      </div>
+    </article>
+  `;
+});
+</script>
+
+
+<!-- 百度自动推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</body>
+</html>
